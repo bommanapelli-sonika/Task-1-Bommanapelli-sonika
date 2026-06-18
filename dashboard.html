@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CareerConnect Dashboard</h1>
+
+    <div>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<section class="profile">
+    <h2>Student Profile</h2>
+    <div id="profileData"></div>
+</section>
+
+<section>
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Jobs"
+        onkeyup="searchJobs()">
+
+    <select id="filter" onchange="filterJobs()">
+        <option value="all">All Jobs</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="FullStack">FullStack</option>
+    </select>
+</section>
+
+<section>
+    <h2>Available Jobs</h2>
+    <div id="jobsContainer"></div>
+</section>
+
+<section>
+    <h2>Applied Jobs</h2>
+    <ul id="appliedJobs"></ul>
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
