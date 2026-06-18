@@ -58,6 +58,11 @@ CareerConnect/
 * Real-time job listings using APIs
 * Company dashboard for posting jobs
 * Email notifications
+  ## Live Demo
+
+🔗
+https://bommanapelli-sonika.github.io/Task-1-Bommanapelli-sonika/
+
 
 ## Author
 
